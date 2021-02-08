@@ -6,6 +6,7 @@ let package = Package(
     name: "shiny-lang",
     dependencies: [],
     targets: [
-        .target(name: "Shiny", dependencies: []),
+        .target(name: "Shiny", dependencies: ["Syntax"]),
+        .target(name: "Syntax", dependencies: []),
     ]
 )
