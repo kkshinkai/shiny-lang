@@ -17,4 +17,5 @@ Here are some long-term goals (I should probably call them manifestos). Maybe
 someday I'll start working on them, but not now.
 
 -   [ ] AST and constraint system need better allocators, we should use arena or
-    memory pools
+    memory pools.
+-   [ ] Support Linux and Windows.
