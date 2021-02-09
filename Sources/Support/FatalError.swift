@@ -20,3 +20,11 @@ public func unimplemented(_ message: @autoclosure () -> String = String(),
                           line: UInt = #line) -> Never {
     fatalError(message(), file: file, line: line)
 }
+
+/// Since we don't have a diagnostic engine yet, I've built a temporary
+/// replacement. It is almost an alias for `print(_:)` with no side effect.
+/// By the way, do not capitalize the beginning of the diagnostic information.
+@inline(__always)
+public func informalDiagnose(_ message: @autoclosure () -> String) {
+    print("Diagnosis: \(message())")
+}
