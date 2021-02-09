@@ -19,6 +19,8 @@ public class CompilerInstance {
         sourceCodeBuffer = try! Data(contentsOf: url, options: .mappedIfSafe)
     }
     
+    public func performLexOnly() {}
+    
     public func performParseOnly() {}
     
     public func performCompile() {

@@ -150,7 +150,9 @@ extension Token {
              rawStringDelimiter,
              stringSegment,
              stringInterpolationAnchor,
-             yield // This should be something in Swift6, we don't need it yet
+             yield, // This should be something in Swift6, we don't need it yet
+             eof,
+             comment
         // TODO: A contextual keyword is used to provide a specific meaning in
         // the code, but it is not a reserved word in Swift. I need a list of
         // them.
